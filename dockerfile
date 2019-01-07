@@ -17,9 +17,9 @@ RUN apt-get -y install python3-pip
 
 RUN pip3 install --upgrade pip
 
-RUN pip install django 
+RUN pip3 install django 
 
-RUN pip -y install djangorestframework
+RUN pip3 -y install djangorestframework
 
 RUN pip install matplotlib
 RUN pip install numpy
