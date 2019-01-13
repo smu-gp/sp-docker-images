@@ -22,8 +22,8 @@ RUN pip3 install --upgrade pip
 
 RUN pip3 install django 
 
-RUN pip3 -y install djangorestframework
+RUN pip3 install djangorestframework
 
-RUN pip install matplotlib
-RUN pip install numpy
-RUN pip install OpenCV-Python
+RUN pip3 install matplotlib
+RUN pip3 install numpy
+RUN pip3 install OpenCV-Python
