@@ -4,19 +4,11 @@ FROM ubuntu:16.04
 RUN cd /etc/apt && \
     sed -i 's/archive.ubuntu.com/mirror.kakao.com/g' sources.list
 
-RUN apt-get update
-
-RUN apt-get -y install vim
-
-RUN apt-get dist-upgrade
-
-RUN apt-get autoremove
-
-RUN apt-get -y install python3
-
-RUN apt-get -y install python
-
-RUN apt-get -y install python3-pip
+RUN apt-get update && apt-get install -y \
+    git \
+    vim \
+    python3 \ 
+    python3-pip
 
 RUN pip3 install --upgrade pip
 
