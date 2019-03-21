@@ -19,7 +19,8 @@ RUN pip3 install djangorestframework
 RUN pip3 install matplotlib
 RUN pip3 install numpy
 
-
-
+RUN pip install scipy
+RUN pip3 install --upgrade tensorflow-gpu
 RUN pip install opencv-python
 RUN apt-get -y install python-opencv
+
